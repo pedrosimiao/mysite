@@ -1,0 +1,2 @@
+# mysite
+Projeto django blog
