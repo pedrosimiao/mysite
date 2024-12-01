@@ -9,3 +9,7 @@ def post_published():
 @pytest.mark.django_db
 def test_create_post_published(post_published):
     assert post_published.title == 'pytest with factory'
+    assert post_published.status == 0
+    assert post_published.id is not None
+    assert post_published.created_on is not None
+
