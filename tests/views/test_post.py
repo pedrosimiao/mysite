@@ -1,4 +1,4 @@
-#import json
+# import json
 
 import pytest
 
@@ -14,4 +14,29 @@ def test_post_view(client):
     # pdb.set_trace()
     # response.content = json.loads(response.content)
 
-    assert response.content == b'\n        <!DOCTYPE html>\n        <html>\n        <head>\n            <title>Django Views - Exerc\xc3\xadcio M\xc3\xb3dulo 8</title>\n        </head>\n        <body>\n            <div style="\n                margin: 0 auto;\n                width: 360px; \n                height: 360px; \n                background-color: #e3e3e3; \n                opacity: 0.5; \n                border-radius: 16px; \n                border: 2px groove #e3e3e3;">\n                    # <h1>Hello, World!</h1>\n                    # <p>Welcome to the Django!</p>\n            </div>\n        </body>\n        </html>\n        '
+    assert (response.content ==
+            b'\n        '
+            b'<!DOCTYPE html>\n        '
+            b'<html>\n        '
+            b'<head>\n            '
+            b'<title>Django Views - Modulo 8</title>\n        '
+            b'</head>\n        '
+            b'<body>\n            '
+            b'<div style="\n                '
+            b'margin: 64px auto;\n                p'
+            b'adding-top: 32px;\n                '
+            b'width: 420px; \n                '
+            b'height: 240px; \n                '
+            b'background-color: #e3e3e3; \n                '
+            b'opacity: 0.5; \n                '
+            b'border-radius: 16px; \n                '
+            b'border: 4px groove #000;\n                '
+            b'display: flex;\n                '
+            b'flex-direction: column;\n                '
+            b'align-items: center\n            '
+            b'">\n                    '
+            b'<h1>Hello, World!</h1>\n                    '
+            b'<h3>Welcome to the Django!</h3>\n            '
+            b'</div>\n        '
+            b'</body>\n        '
+            b'</html>\n        ')

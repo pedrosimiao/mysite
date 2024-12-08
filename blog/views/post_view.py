@@ -7,19 +7,24 @@ class PostView(generic.View):
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Django Views - Exercício Módulo 8</title>
+            <title>Django Views - Modulo 8</title>
         </head>
         <body>
             <div style="
-                margin: 0 auto;
-                width: 360px; 
-                height: 360px; 
+                margin: 64px auto;
+                padding-top: 32px;
+                width: 420px; 
+                height: 240px; 
                 background-color: #e3e3e3; 
                 opacity: 0.5; 
                 border-radius: 16px; 
-                border: 2px groove #e3e3e3;">
-                    # <h1>Hello, World!</h1>
-                    # <p>Welcome to the Django!</p>
+                border: 4px groove #000;
+                display: flex;
+                flex-direction: column;
+                align-items: center
+            ">
+                    <h1>Hello, World!</h1>
+                    <h3>Welcome to the Django!</h3>
             </div>
         </body>
         </html>
